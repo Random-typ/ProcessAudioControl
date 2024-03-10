@@ -1,3 +1,8 @@
+#pragma once
+
+#ifndef __ProcessAudioControl_H__
+#define __ProcessAudioControl_H__
+
 #include <string>
 #include <Windows.h>
 #include <audiopolicy.h>
@@ -94,3 +99,4 @@ private:
 
     bool autoReconnect;
 };
+#endif // !__ProcessAudioControl_H__
