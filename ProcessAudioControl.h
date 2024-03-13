@@ -4,12 +4,15 @@
 #define __ProcessAudioControl_H__
 
 #include <string>
+#include <tuple>
 #include <Windows.h>
 #include <audiopolicy.h>
 #include <tlhelp32.h>
 #include <Mmdeviceapi.h>
 
 #pragma comment(lib, "Kernel32.lib")
+#pragma comment(lib, "Ole32.lib")
+#pragma comment(lib, "User32.lib")
 
 class ProcessAudioControl {
 public:
@@ -99,4 +102,4 @@ private:
 
     bool autoReconnect;
 };
-#endif // !__ProcessAudioControl_H__
+#endif // __ProcessAudioControl_H__
